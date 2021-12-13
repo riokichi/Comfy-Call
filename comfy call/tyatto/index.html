@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SkyWay - P2P Data example</title>
+    <link rel="stylesheet" href="../_shared/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">チャットルーム</h1>
+      <p class="note">
+      </p>
+      <div class="p2p-data">
+        <div>
+          <p>あなたのID <span id="js-local-id"></span></p>
+          <input type="text" placeholder="相手のID" id="js-remote-id">
+          <button id="js-connect-trigger">入室</button>
+          <button id="js-close-trigger">退出</button>
+        </div>
+        <div>
+          <pre class="messages" id="js-messages"></pre>
+          <input type="text" id="js-local-text">
+          <button id="js-send-trigger">送信</button>
+        </div>
+      </div>
+      <p class="meta" id="js-meta"></p>
+    </div>
+    <script src="//cdn.webrtc.ecl.ntt.com/skyway-4.4.3.js"></script>
+    <script src="../_shared/key.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
